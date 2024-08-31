@@ -25,7 +25,7 @@ def toggle_rendering(event):
 
 
 def run_environment(seed, tnng, root_team, generation, run_id):
-    assert Parameters.ENVIRONMENT in ['CartPole-v1', 'LunarLander-v2', 'CliffWalking-v0', 'Taxi-v3'], 'Environment not implemented.'
+    assert Parameters.ENVIRONMENT in ['CartPole-v1', 'LunarLander-v2'], 'Environment not implemented.'
 
     # Initialize the environment
     env = gymnasium.make(Parameters.ENVIRONMENT, render_mode="rgb_array")
